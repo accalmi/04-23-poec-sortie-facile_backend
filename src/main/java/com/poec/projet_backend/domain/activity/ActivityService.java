@@ -22,6 +22,10 @@ public class ActivityService {
                 );
     }
 
+    public Activity getByName(String name) {
+        return repository.findByName(name);
+    }
+
     public Activity add(Activity activity) {
         return repository.save(activity);
     }

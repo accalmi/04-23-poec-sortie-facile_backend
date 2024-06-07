@@ -33,6 +33,13 @@ public class ActivityController {
         return new ResponseEntity<>(activityDTO, HttpStatus.OK);
     }
 
+    @GetMapping("/name/{name}")
+    public ResponseEntity<ActivityDTO> getByName(@PathVariable String name) {
+        Activity activity = service.getByName(name);
+        ActivityDTO activityDTO = ActivityDTO.mapFromEntity(activity);
+        return new ResponseEntity<>(activityDTO, HttpStatus.OK);
+    }
+
     @PostMapping(ADD)
     public ResponseEntity<ActivityDTO> add(@RequestBody Activity activity) {
         Activity newActivity = service.add(activity);

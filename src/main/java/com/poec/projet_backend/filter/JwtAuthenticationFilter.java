@@ -28,6 +28,7 @@ public class JwtAuthenticationFilter extends OncePerRequestFilter {
             "/api/v1/auth/all",
             "/api/v1/activity/all",
             "/api/v1/activity/{id}",
+            "/api/v1/activity/name/{name}",
             "/api/v1/category/all",
             "/api/v1/category/{id}",
             "/api/v1/category/add",
