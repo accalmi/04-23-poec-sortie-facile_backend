@@ -28,5 +28,4 @@ public class Route {
     public static final String DELETE = "/delete/{id}";
     public static final String ID = "/{id}";
     public static final String UPDATE = "/update/{id}";
-
 }

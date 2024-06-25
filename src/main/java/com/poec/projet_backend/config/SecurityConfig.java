@@ -13,9 +13,6 @@ import org.springframework.security.web.SecurityFilterChain;
 import org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter;
 import org.springframework.security.web.csrf.CookieCsrfTokenRepository;
 
-import static com.poec.projet_backend.util.Route.authorizedPaths;
-
-
 @Configuration
 @EnableWebSecurity
 @RequiredArgsConstructor
