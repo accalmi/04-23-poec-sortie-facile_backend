@@ -24,4 +24,7 @@ public class Testimonial {
 
     @Column(name = "note", columnDefinition = "INTEGER", nullable = false)
     private Double note;
+
+    @Column(name = "img_url",columnDefinition = "VARCHAR(255)")
+    private String imgUrl;
 }
