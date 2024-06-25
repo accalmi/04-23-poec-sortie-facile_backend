@@ -4,7 +4,8 @@ public record TestimonialDTO(Long id,
                              String user,
                              String title,
                              String message,
-                             Double note
+                             Double note,
+                             String imgUrl
 ) {
     public static TestimonialDTO mapFromEntity(Testimonial testimonial) {
         return new TestimonialDTO(
@@ -12,7 +13,8 @@ public record TestimonialDTO(Long id,
                 testimonial.getUser(),
                 testimonial.getTitle(),
                 testimonial.getMessage(),
-                testimonial.getNote()
+                testimonial.getNote(),
+                testimonial.getImgUrl()
         );
     }
 }
